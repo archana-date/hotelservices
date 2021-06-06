@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height:59px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*Navigation Bar*/
+
+/*Navigation Bar Logo and Image*/
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    width:100px; 
+    height:100px;
+}
+
+/*Navigation Bar List styling*/
+
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color:  rgb(210, 255, 210);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    color: rgb(5, 5, 110);;
+}
+
+#navbar ul li{
+    list-style: none;
+    /*background-color: black;*/
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{ 
+    color: rgb(5, 5, 110);;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar ul li a:hover{ 
+    color: green;
+    background-color: white;
+    font-size: 23px;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/food2.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+   
+}
+
+#home h1{
+    color: rgb(5, 5, 110);
+    text-align: center;
+}
+
+#home p{
+    color: rgb(5, 5, 110);
+    text-align: center;
+    font-size: 1.5rem;
+    
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Container*/
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(5, 5, 110); ;
+    display: block;
+    margin: auto;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(210, 255, 210);
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/*Client Section*/
+#client{
+    position: relative;
+}
+
+#client::before{
+    content: "";
+    /*background: url(../img/food1.jpg) no-repeat center center/cover;*/
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#clients img{
+    height: 100px;
+}
+#clientitems{
+    padding: 34px;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+    margin: 14px 2px;
+}
+#contact::before{
+    content: "";
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.contactbox form{
+    width: 40%;
+}
+.contactbox label{
+    font-size: 1.3rem;;
+    font-family: 'Bree Serif', serif;
+    
+}
+.contactbox input, .contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color:  rgb(210, 255, 210);
+    color:rgb(5, 5, 110);;
+    padding: 9px 20px;
+}
+
+/*Utility Classes*/
+.heading{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    
+
+}
+
+.heads{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    color: rgb(5, 5, 110);
+}
+
+.heading1{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    color: rgb(5, 5, 110);
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 4px solid white;
+    background-color: rgb(5, 5, 110);
+    color: white;
+    border-radius: 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
